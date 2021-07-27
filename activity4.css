@@ -1,0 +1,75 @@
+.form-inline{
+    display: flex;
+    flex-flow: column;
+    padding-right: 50px;
+    align-items: center;  
+}
+
+.form-inline label{
+    margin: 5px 10px 5px 10px;
+}
+.form-inline input{
+    vertical-align: middle;
+    margin: 5px 10px 5px 15px;
+    padding: 6px;
+    background-color:skyblue;
+    border-style: solid;
+}
+input[type="submit"], input[type="reset"],input[type="button"]{
+    padding: 5px 20px;
+    background-color:rgb(65, 65, 245);
+    border-radius: 5px;   
+    color: white;
+
+}
+
+h3{
+    text-align: center;
+}
+
+#message{
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p{
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+.valid{
+    color: green;
+}
+
+.valid:before{
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+}
+
+.invalid{
+    color: red;
+}
+
+.invalid:before{
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+}
+
+.form-inline button:hover{
+    background-color: royalblue;
+}
+@media (max-width: 800px){
+    .form-inline input{
+        margin: 10px 0;
+    }
+    .form-inline{
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
